@@ -1,0 +1,8 @@
+.text-field.error {
+    -fx-text-box-border: red ;
+    -fx-focus-color: red ;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, white ;
+}

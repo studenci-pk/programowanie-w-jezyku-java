@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="376.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pk.biblioteka.controllers.EditResourcesPaneController">
+  <children>
+    <TabPane prefHeight="376.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Egzemplarz">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e8f4f8;">
+              <children>
+                <ListView fx:id="copyView" prefHeight="285.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="41.0" />
+                <Button id="addCopy" mnemonicParsing="false" onAction="#addCopy" text="Dodaj" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="eBook">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e8f4f8;">
+              <children>
+                <ListView fx:id="ebookView" prefHeight="285.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="41.0" />
+                <Button id="addEbook" mnemonicParsing="false" onAction="#addEbook" text="Dodaj" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Audiobook">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e8f4f8;">
+              <children>
+                <ListView fx:id="audiobookView" prefHeight="285.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="41.0" />
+                <Button id="addAudiobook" mnemonicParsing="false" onAction="#addAudiobook" style="-fx-background-color: #add8e6;" text="Dodaj" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

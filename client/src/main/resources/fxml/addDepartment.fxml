@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e8f4f8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pl.edu.pk.biblioteka.controllers.AddDepartmentController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" spacing="5.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="95.0">
+      <children>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0" VBox.vgrow="ALWAYS">
+          <children>
+            <Pane prefHeight="257.0" prefWidth="499.0">
+              <children>
+                <Button fx:id="OkBtn" layoutX="444.0" layoutY="222.0" mnemonicParsing="false" onAction="#OkBtn_action" style="-fx-background-color: #add8e6;" text="OK" />
+                <Button fx:id="BackBtn" layoutX="14.0" layoutY="222.0" mnemonicParsing="false" onAction="#moveToAddResourceBookStage" style="-fx-background-color: #add8e6;" text="Back" />
+                <TextField fx:id="Add_category_imie" layoutX="85.0" layoutY="34.0" />
+                <Label layoutX="29.0" layoutY="37.0" text="Nazwa:" />
+              </children>
+            </Pane>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <Label fx:id="Label" alignment="TOP_LEFT" prefHeight="38.0" prefWidth="200.0" text="Dodaj dział" textAlignment="CENTER" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="38.0">
+      <font>
+        <Font size="26.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="81.23" AnchorPane.topAnchor="38.0">
+      <image>
+        <Image url="@../images/department.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

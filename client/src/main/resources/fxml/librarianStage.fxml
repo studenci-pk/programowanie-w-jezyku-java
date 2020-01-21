@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="rootPane" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pk.biblioteka.controllers.LibrarianStageController">
+  <children>
+    <MenuBar maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefWidth="412.0" style="-fx-background-color: #add8e6;" useSystemMenuBar="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Zbiory">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#loadAddBookPane" text="Dodaj książkę" />
+            <MenuItem mnemonicParsing="false" onAction="#loadItemBrowserPane" text="Edytuj" />
+          </items>
+        </Menu>
+        <Menu fx:id="readersMenu" mnemonicParsing="false" text="Użytkownik" />
+        <Menu fx:id="statMenu" mnemonicParsing="false" text="Statystyki" />
+      </menus>
+    </MenuBar>
+    <MenuBar id="logoutMenu" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" mouseTransparent="false" prefWidth="188.0" style="-fx-background-color: #add8e6;" useSystemMenuBar="false" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu fx:id="settingsMenu" mnemonicParsing="false" text="Ustawienia" />
+        <Menu fx:id="logoutMenu" disable="false" mnemonicParsing="false" text="Wyloguj" />
+      </menus>
+    </MenuBar>
+    <Pane fx:id="pane" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #e8f4f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0" />
+  </children>
+</AnchorPane>

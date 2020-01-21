@@ -1,0 +1,3 @@
+> teksty:   #30a9ce
+> tło:  #e8f4f8
+> ciemne tło:  #add8e6

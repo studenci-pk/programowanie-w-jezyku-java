@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pk.biblioteka.controllers.ReaderStageController">
+  <children>
+    <MenuBar maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefWidth="500.0" style="-fx-background-color: #add8e6;" useSystemMenuBar="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Konto">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#loadRentalPane" text="Wypożyczenia" />
+            <MenuItem mnemonicParsing="false" onAction="#loadOwingPane" text="Należności" />
+            <MenuItem mnemonicParsing="false" onAction="#loadSettingsPane" text="Ustawienia" />
+          </items>
+        </Menu>
+        <Menu fx:id="browserMenu" mnemonicParsing="false" text="Wyszukiwarka" />
+        <Menu fx:id="cartMenu" mnemonicParsing="false" text="Koszyk" />
+      </menus>
+    </MenuBar>
+    <MenuBar id="logoutMenu" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" mouseTransparent="false" prefWidth="100.0" style="-fx-background-color: #add8e6;" useSystemMenuBar="false" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu fx:id="logoutMenu" disable="false" mnemonicParsing="false" text="Wyloguj" />
+      </menus>
+    </MenuBar>
+    <Pane fx:id="pane" prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #e8f4f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0" />
+  </children>
+</AnchorPane>

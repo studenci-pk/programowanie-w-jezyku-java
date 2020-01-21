@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="376.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pk.biblioteka.controllers.SettingsPaneController">
+  <children>
+    <TabPane prefHeight="376.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Dane osobowe">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e8f4f8;">
+              <children>
+                <Button layoutY="274.0" maxHeight="21.0" maxWidth="86.0" mnemonicParsing="false" onAction="#updateBtn" style="-fx-background-color: #add8e6;" text="Aktualizuj" AnchorPane.leftAnchor="257.0" AnchorPane.rightAnchor="257.0" />
+                <TextField fx:id="nameField" layoutY="47.0" prefWidth="200.0" promptText="Imię" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <TextField fx:id="emailField" layoutY="119.0" prefWidth="200.0" promptText="email" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <TextField fx:id="surnameField" layoutY="82.0" prefWidth="200.0" promptText="Nazwisko" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <TextField id="phoneField" fx:id="peselField" disable="true" layoutY="159.0" prefWidth="200.0" promptText="nr PESEL" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <TextField id="a" fx:id="additionalField1" layoutY="199.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <TextField fx:id="additionalField2" layoutY="234.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <Label fx:id="dataLabel" layoutX="282.0" layoutY="14.0" text="Label" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Zmiana hasła">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e8f4f8;">
+              <children>
+                <PasswordField id="OldPasswordField" fx:id="oldPasswordField" layoutY="95.0" prefWidth="200.0" promptText="Stare hasło" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <PasswordField id="NewPasswordField" fx:id="newPasswordField" layoutY="126.0" prefWidth="200.0" promptText="Nowe hasło" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <PasswordField id="RepeatPasswordField" fx:id="repeatPasswordField" layoutY="159.0" prefWidth="200.0" promptText="Powtórz nowe hasło" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+                <Button layoutY="197.0" maxHeight="21.0" maxWidth="64.0" mnemonicParsing="false" onAction="#changePasswordAction" text="Zmień" AnchorPane.leftAnchor="267.0" AnchorPane.rightAnchor="269.0" />
+                <Label id="responseLabel" fx:id="passwordLabel" layoutY="43.0" prefWidth="-1.0" text="Label" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

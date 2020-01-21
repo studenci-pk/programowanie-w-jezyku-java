@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: #e8f4f8;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pl.edu.pk.biblioteka.controllers.BookBrowseStage">
+  <children>
+    <TextField id="searchField" fx:id="titleField" prefWidth="482.0" promptText="tytuł" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="57.0" />
+    <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#searchBtnAction" text="Szukaj" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="58.0" />
+    <ListView fx:id="listView" prefHeight="261.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="101.0" />
+    <Hyperlink fx:id="advancedLink" onAction="#advancedClick" text="Zaawansowane wyszukwianie" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="79.0" />
+    <AnchorPane fx:id="advancedPane" prefHeight="117.0" prefWidth="572.0" style="-fx-background-color: #add8e6;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="101.0">
+      <children>
+        <Button layoutY="83.0" mnemonicParsing="false" onAction="#advancedSearchAction" text="Wyszukaj" AnchorPane.rightAnchor="14.0" />
+        <ComboBox fx:id="authorBox" editable="true" layoutX="14.0" layoutY="14.0" prefWidth="262.0" promptText="autor">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="publisherBox" editable="true" layoutX="14.0" layoutY="48.0" prefWidth="262.0" promptText="wydawnictwo">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="departmentBox" editable="true" layoutX="14.0" layoutY="83.0" prefWidth="262.0" promptText="dział">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TextField id="searchField" fx:id="categoryField" layoutX="296.0" layoutY="14.0" prefWidth="262.0" promptText="kategoria" />
+        <TextField id="searchField" fx:id="keywordsField" layoutX="296.0" layoutY="48.0" prefWidth="262.0" promptText="słowo klucz" />
+      </children>
+    </AnchorPane>
+    <Hyperlink onAction="#moveToLoginStage" text="Zaloguj" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="14.0" />
+  </children>
+</AnchorPane>
